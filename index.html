@@ -3,26 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Abay, sv, resume">
-    <meta name="description" content="Это сайт - резюме Шавалиева Абая">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
 
-  <img src="Abay.jpg" width="200" alt="Шавалиев Абай">
+  <div class="container">
 
-  <h1>Шавалиев Абай</h1>
+    <div class="info">
+      <img src="Abay.jpg" alt="Абай Шавалиев" class="Abay">
 
-  <p>Я будущий программист, занимаюсь профессионально шахматами</p>
+      <div class="info-text">
+        <h1>Абай Шавалиев</h1>
 
-  <h2>Мои хобби</h2>
+        <p>Я <strong>профессионально занимаюсь шахматами</strong></p>
 
-  <ol>
-    <li>Шахматы</li> 
-    <li>Танцы</li> 
-    <li>Пение</li> 
+        <p>Я люблю <em>путешествовать, заниматься спортом и программировать</em></p>
+
+        <h4>Список соц.сетей</h4>
+
+        <a href="https://www.instagram.com/abay_shavaliyev/" target="_blank">Instagram</a>
+      </div>
+    </div>
+
+    <div class="card bg-green">
+      <h2>Мои хобби</h2>
+
+      <ol class="list">
+        <li>Шахматы</li>
+        <li>Программирование</li>
+        <li>Пение</li>
+      </ol>
+    </div>
 
 
 
+    <form action="/" class="form">
+      <h2>Связаться со мной</h2>
+
+      <div class="form-row">
+
+        <div class="form-group">
+          <label for="name">Ваше имя</label>
+          <input type="text" id="name" placeholder="Введите имя">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Ваш email</label>
+          <input type="email" id="email" placeholder="Введите email">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Ваше сообщение</label>
+        <textarea id="" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+      </div>
+
+      <input class="btn" type="submit" value="Отправить!">
+    </form>
+  </div>
 </body>
 </html>
